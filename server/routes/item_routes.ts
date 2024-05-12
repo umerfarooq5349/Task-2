@@ -4,7 +4,7 @@ import {
   getItem,
   updateItem,
 } from "../controllers/item_controller";
-const { getItems, addItem } = require("../controllers/item_controller");
+import { getItems, addItem } from "../controllers/item_controller";
 
 const itemRouter = Express.Router();
 
