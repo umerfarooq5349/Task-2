@@ -17,7 +17,7 @@
 /build
 
 config.env
-
+/uploads/
 # misc
 .DS_Store
 *.pem
