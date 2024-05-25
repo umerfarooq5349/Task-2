@@ -1,22 +1,21 @@
 import Express from "express";
-import { uploadImage } from "./../controllers/item_image_upload_controller";
+import {
+  uploadImage,
+  storage,
+  fileFilter,
+} from "./../controllers/item_image_upload_controller";
 import multer from "multer";
 
-const storage = multer.diskStorage({
-  destination: (req, file, cb) => {
-    cb(null, "uploads/");
-  },
-  filename: (req, file, cb) => {
-    cb(null, Date.now() + "-" + file.originalname);
-  },
+const uploadStorage = multer({
+  storage,
+  limits: { fileSize: 1024 * 1024 * 5 }, // only 5mb file size
+  fileFilter, // /jpg|png|jpeg/ only these files are accepted
 });
-
-const uploadStorage = multer({ storage });
 
 const item_image_upload_router = Express.Router();
 
 item_image_upload_router
   .route("/")
-  .post(uploadStorage.single("avatar"), uploadImage);
+  .post(uploadStorage.single("product-image"), uploadImage);
 
 export default item_image_upload_router;
