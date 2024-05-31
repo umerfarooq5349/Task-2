@@ -16,6 +16,6 @@ const item_image_upload_router = Express.Router();
 
 item_image_upload_router
   .route("/")
-  .post(uploadStorage.single("product-image"), uploadImage);
+  .post(uploadStorage.single("thumbnail"), uploadImage);
 
 export default item_image_upload_router;

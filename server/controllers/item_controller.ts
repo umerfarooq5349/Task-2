@@ -5,7 +5,7 @@ import AppError from "./appErros";
 
 const getItems = catchAsync(async (req: Request, res: Response) => {
   const item = await Item.find();
-  res.status(200).json({ status: "success", data: item });
+  res.status(200).json({ status: "success", total: item.length, data: item });
 });
 
 const getItem = catchAsync(async (req: Request, res: Response) => {
