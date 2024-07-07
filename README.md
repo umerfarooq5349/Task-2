@@ -2,16 +2,16 @@
 
 ### Project Description
 
-In Task-2, we dive into file uploads using Node.js and Next.js. This task focuses on handling file uploads, validation, and storage seamlessly.
+In Task-2, we dive into **file uploads** using **Node.js** and **Next.js**. This task focuses on handling file uploads, validation, and storage seamlessly.
 
 ### Features
 
-- File Upload Endpoint 📤
-- File Validation (e.g., Accept only Images) 🖼️
-- Store Uploaded Files on the Server's Filesystem 💾
+- **File Upload Endpoint** 📤
+- **File Validation** (e.g., Accept only Images) 🖼️
+- Store **Uploaded Files** on the Server's Filesystem 💾
 - Error Handling for File Upload Failures ❗
-- Front-end Interface for File Upload 🖱️
-- Display Uploaded Files on a Separate Page 📄
+- **Front-end Interface** for File Upload 🖱️
+- **Display Uploaded Files** on a Separate Page 📄
 
 ### Project Structure
 
@@ -100,9 +100,7 @@ Task-2/
 - **Express**: Latest version
 - **SASS**: For styling
 - **TypeScript**: For both Next.js and Node.js
-
+---
 ### Author
 
 Umer Farooq
-
----
