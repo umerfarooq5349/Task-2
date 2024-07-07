@@ -65,7 +65,7 @@ Task-2/
     npm start
     ```
 
-    ![Server Start](https://via.placeholder.com/400x200)
+    
 
 2. **Start the client:**
 
@@ -74,7 +74,7 @@ Task-2/
     npm run dev
     ```
 
-    ![Client Start](https://via.placeholder.com/400x200)
+    
 
 ### API Endpoints
 
